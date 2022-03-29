@@ -1,0 +1,9 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+ @if (!User.Identity.IsAuthenticated)
+{
+    <p>Access denied</p>
+}
